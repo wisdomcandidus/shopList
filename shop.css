@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-bg-color: rgb(255, 255, 255);
+    --main-text-color: rgb(255, 255, 255);
+    --main-button-color: rgb(11, 60, 139);
+    --main-boxShadow: 0.5px 0.5px 2px 0.20px rgba(0, 0, 0, 0.445);
+    --body-bgColor:rgba(134, 143, 182, 0.142);;
+}
+
+body{
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: min(100%,300px);
+    background-color: white;
+    height: auto;
+    padding: 2rem 1rem;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    padding: 0.7rem 0.3rem;
+}
+
+form{
+    margin: 1rem 0;
+}
+
+form input{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: var(--body-bgColor);
+    /* box-shadow: var(--main-boxShadow); */
+
+    outline-color: rgba(134, 143, 182, 0.142) ;
+}
+
+form button{
+    padding: 0.5rem 2rem;
+    margin: 0.5rem 0;
+    border: none;
+    background-color: var(--main-button-color);
+    border-radius: 4px;
+    color: var(--main-text-color);
+    cursor: pointer;
+}
+
+.edit-item{
+    color: #ccc;
+}
+
+.filter .filterItem{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.142) ;
+    outline-color: rgba(134, 143, 182, 0.142);
+    margin: 0.5rem 0;
+}
+
+.clear button{
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+    margin: 2rem 0 0.5rem 0;
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+.shopList{
+    padding: 0.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.485);
+    margin: 1rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.listBtn{
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    background: transparent;
+}
+
+.red{
+    color: red;
+}
